@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         GoogleBot
+// @name         YandexBot
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
@@ -13,7 +13,7 @@
 let yandexInput = document.getElementById("text");
 let btnK = document.getElementsByClassName("button mini-suggest__button button_theme_search button_size_search i-bem button_js_inited")[0];
 if(btnK != undefined){
-    yandexInput.value = "Что такое гобой";
+    yandexInput.value = "Как звучит гобой";
     setTimeout(function(){
         btnK.click();
     }, 1000);
@@ -22,7 +22,7 @@ if(btnK != undefined){
     let goNext = true;
     for(let i=0; i<links.length; i++){
         let link = links[i];
-        if(link.href.indexOf("музыкалка-онлайн.рф") != -1){
+        if(link.href.indexOf("xn----7sbab5aqcbiddtdj1e1g.xn--p1ai") != -1){
             setTimeout(function(){
                 link.click();
             }, 3000);
@@ -36,11 +36,12 @@ if(btnK != undefined){
 
 
     if(goNext){
-        let pnnext = document.getElementsByClassName("link link_theme_none link_target_serp pager__item pager__item_kind_next i-bem link_js_inited")[0];
+        let pnnext = document.getElementsByClassName("link link_theme_none link_target_serp pager__item pager__item_kind_next")[0];
         setTimeout(function(){
             pnnext.click();
         }, 3000);
     }
+
 }else{
     let links = document.links;
     let randomIndex = getIntRandom(0, links.length);
@@ -50,7 +51,7 @@ if(btnK != undefined){
             links[randomIndex].click();
         }, 2000);
     }else{
-        location.href = "https://музыкалка-онлайн.рф/";
+        location.href = "https://xn----7sbab5aqcbiddtdj1e1g.xn--p1ai/";
     }
 }
 
