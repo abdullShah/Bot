@@ -5,7 +5,7 @@
 // @description  try to take over the world!
 // @author       You
 // @match        https://yandex.ru/*
-// @match        https://музыкалка-онлайн.рф/*
+// @match        https://xn----7sbab5aqcbiddtdj1e1g.xn--p1ai/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
